@@ -15,5 +15,27 @@ header,
     border: 1px solid black;
 }
 sidebar {
+    padding: 15px;
+    display: grid;
     grid-row: 1/-1;
+}
+sidebar div img {
+    max-width: 2.5rem;
+}
+sidebar nav ul,
+sidebar div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 5px;
+    list-style-type: none;
+}
+sidebar nav ul img {
+    border: 2px solid blue;
+    max-width: 2.5rem;
+    grid-column: 1;
+}
+sidebar nav ul li {
+    font-size: 1.8rem;
+    grid-column: 2;
+    border: 2px solid red;
 }
