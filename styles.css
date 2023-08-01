@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    cursor: pointer;
+}
 .container {
     height: 100vh;
     display: grid;
