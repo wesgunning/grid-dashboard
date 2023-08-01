@@ -14,7 +14,7 @@ a:hover {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
 }
 sidebar, 
 header, 
@@ -47,5 +47,65 @@ sidebar nav ul img {
 }
 sidebar nav ul li {
     font-size: 1.8rem;
+    grid-column: 2;
+}
+header {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content min-content;
+    gap: 20px;
+}
+.search {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 10px;
+}
+.search img {
+    max-width: 30px;
+}
+#search-bar {
+    max-height: 1.9rem;
+    background-color: rgb(208, 208, 208);
+    border: none;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+.user {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: end;
+    gap: 10px;
+}
+#doug,
+#doug-small {
+    max-width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 8px;
+}
+#doug-small {
+    max-width: 50px;
+    grid-column: 2;
+    object-position: 4px;
+}
+.user-right {
+    display: grid;
+    grid-template-columns: 30px repeat(2, min-content);
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
+}
+#bell-icon {
+    max-width: 25px;
+    grid-column: 1;
+}
+.user-right h2 {
+    font-size: 1.3rem;
+    grid-column: 3;
+}
+.user h2 {
     grid-column: 2;
 }
