@@ -164,9 +164,10 @@ button:hover {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: min-content 1fr;
-    padding: 30px;
     background-color: var(--search-bar);
+    padding: 30px;
     gap: 10px;
+    overflow: auto;
 }
 .projects {
     grid-row: 2;
@@ -174,7 +175,6 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     overflow: scroll;
     gap: 20px;
-    padding: 10px 0 0 10px;
 }
 .cards {
     height: 250px;
