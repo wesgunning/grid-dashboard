@@ -217,8 +217,38 @@ div.trending {
     border-radius: 8px;
     box-shadow: var(--card-shadow);
 }
+div.announcements {
+    display: grid;
+    padding: 20px;
+    gap: 5px;
+    height: min-content;
+}
+div.trending {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    padding: 25px;
+    align-items: center;
+    gap: 15px;
+}
 .announce-container {
     display: grid;
     gap: 10px;
     height: min-content;
+}
+img.trending-icon {
+    width: 80px;
+    grid-column: 1;
+    border-radius: 50%;
+}
+#timmy {
+    background-color: lightblue;
+    object-position: 0 10px;
+    object-fit: cover;
+}
+#cosmo {
+    background-color: aqua;
+    object-position: -2px 10px;
+}
+.screen-name {
+    font-weight: bold;
 }
