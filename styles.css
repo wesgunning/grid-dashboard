@@ -56,6 +56,10 @@ sidebar nav ul svg {
 sidebar nav ul li {
     font-size: 1.8rem;
     grid-column: 2;
+    transition: all 0.5s ease-in-out;
+}
+sidebar nav ul li:hover {
+    transform: translate(20px, 0);
 }
 .sidebar-logo,
 sidebar nav ul li {
@@ -175,7 +179,7 @@ button:hover {
 .cards {
     height: 250px;
     width: 400px;
-    padding: 15px;
+    padding: 25px;
     background: linear-gradient(to right, orange 10px, white 10px);
     border-radius: 8px;
     box-shadow: var(--card-shadow);
