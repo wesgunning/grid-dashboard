@@ -31,21 +31,25 @@ sidebar {
 sidebar div {
     align-items: center;
 }
-sidebar div img {
-    max-width: 3rem;
+sidebar div svg {
+    width: 50px;
+    height: auto;
+    fill: white;
 }
 sidebar nav ul,
 sidebar div {
     display: grid;
     grid-template-columns: 40px 1fr;
-    gap: 8px;
+    gap: 10px;
 }
 sidebar nav ul {
     list-style-type: none;
 }
-sidebar nav ul img {
-    max-width: 2rem;
+sidebar nav ul svg {
+    width: 2rem;
+    height: auto;
     grid-column: 1;
+    fill: white;
 }
 sidebar nav ul li {
     font-size: 1.8rem;
