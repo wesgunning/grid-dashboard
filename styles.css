@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+:root {
+    --sidebar-bg: #1d4ed8;
+}
 a {
     text-decoration: none;
     color: black;
@@ -17,17 +20,13 @@ a:hover {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
 }
-sidebar, 
-header, 
-.content {
-    border: 1px solid black;
-}
 sidebar {
     padding: 15px;
     display: grid;
     grid-row: 1/-1;
     grid-template-rows: repeat(3, min-content);
     gap: 60px;
+    background-color: var(--sidebar-bg);
 }
 sidebar div {
     align-items: center;
@@ -52,12 +51,17 @@ sidebar nav ul li {
     font-size: 1.8rem;
     grid-column: 2;
 }
+.sidebar-logo,
+sidebar nav ul li {
+    color: white;
+}
 header {
     padding: 25px;
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: min-content min-content;
     gap: 20px;
+    box-shadow: 0 0px 10px grey;
 }
 .search {
     display: grid;
@@ -125,8 +129,11 @@ header {
 .buttons button {
     font-size: 1.3rem;
     padding: 0.5rem 2rem;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     border: none;
+    background-color: var(--sidebar-bg);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #new {
     grid-column: 1;
@@ -136,4 +143,34 @@ header {
 }
 #share {
     grid-column: 3;
+}
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: min-content 1fr;
+    padding: 20px;
+}
+.projects {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    overflow: scroll;
+}
+.cards {
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+}
+h3.announcements {
+    grid-column: 2;
+}
+div.announcements,
+div.trending {
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+}
+h3.trending,
+div.trending {
+    grid-column: 2;
 }
